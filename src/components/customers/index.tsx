@@ -100,6 +100,7 @@ const Customers: React.FC<any> = () => {
 
   return (
     <div className="customers">
+      <h1 className="customers__header">Customers</h1>
       <div>
         <div className="customers__action-bar">
           <Button

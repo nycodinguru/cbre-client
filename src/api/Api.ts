@@ -51,7 +51,11 @@ export class Api {
   }
 
   setBaseUrl() {
-      return 'http://localhost:3000';
+    if (process.env.NODE_ENV === 'development') {
+      return process.env.APPLICATION_URL as string;
+    } else {
+      return 'https://cbre-back-end.herokuapp.com'
+    }
   }
 }
 
