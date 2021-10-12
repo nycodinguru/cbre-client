@@ -26,7 +26,7 @@ export class Api {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     };
-
+    //@ts-ignore
     this.baseUrl = this.setBaseUrl();
 
     this.baseConfig = {
@@ -51,11 +51,7 @@ export class Api {
   }
 
   setBaseUrl() {
-    if (process.env.NODE_ENV === 'development') {
-      return process.env.APPLICATION_URL as string;
-    } else {
-      return 'https://cbre-back-end.herokuapp.com'
-    }
+    return process.env.REACT_APP_APPLICATION_URL
   }
 }
 
