@@ -1,0 +1,26 @@
+.customer__form {
+  padding: 0 50px 50px 50px;
+
+  .react-datepicker-wrapper {
+    margin-top: 40px;
+  }
+
+  &-actions {
+    top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    .delete-button {
+      position: absolute;
+      left: -7px;
+      padding-left: 0;
+      padding-right: 0;
+      border: none;
+    }
+
+    .button {
+      margin-left: 10px;
+    }
+  }
+}

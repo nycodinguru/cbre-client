@@ -1,0 +1,48 @@
+.text-field {
+  margin-top: 35px;
+  position: relative;
+  color: var(--color-grey-text);
+
+  &.disabled {
+    pointer-events: none;
+
+    input {
+      border: none;
+    }
+  }
+
+  &__label {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 1.3rem;
+    text-transform: capitalize;
+    transition: all 0.1s ease-in-out;
+    font-weight: 200;
+    cursor: default;
+    color: var(--color-primary);
+  }
+
+  input {
+    padding: 0 2px;
+    margin-top: 3px;
+    background: none;
+    border-bottom: solid var(--color-secondary);
+    border-width: 2px;
+    width: 100%;
+    font-size: 1.1rem;
+    position: relative;
+    top: 1.3rem;
+    color: var(--white);
+    padding-bottom: 2px;
+    caret-color: var(--cnn-red);
+    height: 1.5rem;
+  }
+
+  &--active {
+    .text-field__label {
+      transition: all 0.25s ease-in-out;
+      font-size: 1rem;
+      top: 0 !important;
+    }
+  }
+}

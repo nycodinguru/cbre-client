@@ -1,0 +1,48 @@
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+
+  &__label {
+    color: var(--color-grey-text);
+    font-size: 0.95rem;
+  }
+
+  &__outer {
+    background: var(--color-background);
+    width: 53px;
+    height: 19px;
+    box-shadow: inset 0 0px 10px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &::before,
+    &::after {
+      position: relative;
+      font-size: 0.8rem;
+    }
+
+    &.on {
+      background: var(--color-secondary);
+
+      .toggle__switch {
+        transform: translateX(31px);
+      }
+    }
+
+    .toggle__switch {
+      transition: all 0.2s ease-in-out;
+      transform: translateX(-2px);
+      height: 25px;
+      width: 25px;
+      background: var(--color-light);
+      border-radius: 50%;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.icon {
+  -webkit-mask-position: center !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  display: inline-block;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: contain !important;
+  cursor: pointer;
+
+  &.x {
+    -webkit-mask: url("../../../assets/icons/ui-icons-x-standard.svg");
+    mask: url("../../../assets/icons/ui-icons-x-standard.svg");
+  }
+}

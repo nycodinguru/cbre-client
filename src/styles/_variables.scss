@@ -1,0 +1,16 @@
+html {
+  --color-background: #f3f3f3;
+  --color-light: #ffffff;
+  --color-primary-text: #f2f2f2;
+  --color-grey-text: #777777;
+  --color-primary: #f6c94b;
+  --color-secondary: #f6c94b;
+  --color-warning: rgb(233, 73, 73);
+}
+
+html.dark {
+  --color-background: #2e2e2e;
+  --color-light: #181818;
+  --color-primary-text: #1a1a1a;
+  --color-grey-text: #f4f4f4;
+}
