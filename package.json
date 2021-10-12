@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/luxon": "^2.0.5",
     "@reduxjs/toolkit": "^1.6.2",
     "@types/react-datepicker": "^4.1.7",
     "axios": "^0.22.0",
